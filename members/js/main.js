@@ -85,7 +85,7 @@ document.addEventListener('mousemove', (e)=>{
         document.getElementById('window-introduce').style.display = "block"
         switch (e.target.getAttribute('data-name')){
             case "en":
-                show_profile("앤냥", "설명")
+                show_profile("앤냥", "작성 필요")
                 break
             case "jv":
                 show_profile("지루비", "고양이는 귀엽습니다. 야옹야옹!<br>커뮤닷을 총괄하고 딜라이트 스튜디오에서는 웹개발자로 활동하고 있습니다.")
@@ -94,19 +94,22 @@ document.addEventListener('mousemove', (e)=>{
                 show_profile("마쵸", "딜라이트 스튜디오를 설립한 장본인이자 크루 내 서열 최하위")
                 break
             case "ne":
-                show_profile("나은", "설명")
+                show_profile("나은", "작성 필요")
                 break
             case "pg":
                 show_profile("플러그", "\"플럭\"")
                 break
             case "rc":
-                show_profile("레코", "설명")
+                show_profile("레코", "작성 필요")
                 break
             case "sy":
-                show_profile("수육", "설명")
+                show_profile("수육", "작성 필요")
                 break
             case "tz":
                 show_profile("팁즈", "\"도미새\"")
+                break
+            case "hs":
+                show_profile("후스", "작성 필요")
                 break
             case "yn":
                 show_profile("여노", "딜라이트 스튜디오 초창기 멤버이자 K-고딩")
@@ -115,13 +118,13 @@ document.addEventListener('mousemove', (e)=>{
                 show_profile("Sweet_Cloud", "<span style='font-size: 80%'>딜라이트 스튜디오 (SNS와 커뮤니티 그 사이에 있는(?))<br>커뮤닷팀 멤버 스위트_클라우드</span>")
                 break
             case "dj":
-                show_profile("한동준", "설명")
+                show_profile("한동준", "작성 필요")
                 break
             case "jr":
-                show_profile("자룽", "설명")
+                show_profile("자룽", "작성 필요")
                 break
             case "mg":
-                show_profile("맑고", "설명")
+                show_profile("맑고", "작성 필요")
                 break
 
         }
