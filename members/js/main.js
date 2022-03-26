@@ -74,7 +74,13 @@ document.addEventListener('scroll', (e)=>{
     }
 })
 
-show_profile = (name, description)=>{
+show_profile = (name, description, information)=>{
+    document.getElementsByClassName('introduce-right')[0].innerHTML = ""
+    if (information){
+        information.forEach((elem)=>{
+            document.getElementsByClassName('introduce-right')[0].innerHTML = document.getElementsByClassName('introduce-right')[0].innerHTML+`<div class="introduce-info"><span class="introduce-spname">${elem['name']}</span> <span class="introduce-spvalue">${elem['value']}</span></div>`
+        })
+    }
     document.getElementById('introduce-name').textContent = name
     document.getElementById('introduce-description').innerHTML = description
 }
@@ -88,7 +94,7 @@ document.addEventListener('mousemove', (e)=>{
                 show_profile("앤냥", "작성 필요")
                 break
             case "jv":
-                show_profile("지루비", "고양이는 귀엽습니다. 야옹야옹!<br>커뮤닷을 총괄하고 딜라이트 스튜디오에서는 웹개발자로 활동하고 있습니다.")
+                show_profile("지루비", "고양이는 귀엽습니다. 야옹야옹!", [{'name': 'Github', 'value': "https://github.com/jinpyojoo"}])
                 break
             case "mc":
                 show_profile("마쵸", "딜라이트 스튜디오를 설립한 장본인이자 크루 내 서열 최하위")
@@ -109,7 +115,7 @@ document.addEventListener('mousemove', (e)=>{
                 show_profile("팁즈", "\"도미새\"")
                 break
             case "hs":
-                show_profile("후스", "작성 필요")
+                show_profile("후스", "일을 하고 싶은 마음만은 가득찬 후스")
                 break
             case "yn":
                 show_profile("여노", "딜라이트 스튜디오 초창기 멤버이자 K-고딩")
@@ -125,6 +131,9 @@ document.addEventListener('mousemove', (e)=>{
                 break
             case "mg":
                 show_profile("맑고", "작성 필요")
+                break
+            case "jsp":
+                show_profile("제스퍼", "작성 필요")
                 break
 
         }

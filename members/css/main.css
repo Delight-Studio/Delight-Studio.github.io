@@ -51,6 +51,13 @@ body.two {
     #desc1 {
         font-size: 25px !important;
     }
+    .introduce-right {
+        position: block;
+        top: auto !important;
+        right: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
 }
 
 .title1 {
@@ -99,6 +106,14 @@ body.two {
 
 #introduce-name {
     width: fit-content;
+}
+
+.introduce-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    margin: 30px;
 }
 
 #window-introduce {
@@ -176,4 +191,20 @@ body.two {
 #section-characters > img.char-items:hover {
     padding: 0px 30px 0px 30px;
     transform: scale(1.5) translateZ(0);
+}
+
+div.introduce-info {
+    margin-bottom: 10px;
+    background: white;
+    display: flex;
+}
+
+div.introduce-info > span.introduce-spname {
+    background: #ee6666 !important;
+    color: white;
+}
+
+div.introduce-info > span {
+    padding: 10px;
+    background: #efefef;
 }
